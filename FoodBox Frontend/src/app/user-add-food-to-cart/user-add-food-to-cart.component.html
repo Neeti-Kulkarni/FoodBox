@@ -1,0 +1,19 @@
+<div class = "container-fluid">
+    <app-user-navbar></app-user-navbar>
+</div>
+
+<div class = "container-fluid col-md-6 offset-md-3">
+    <table class="table" border="1">
+   <tr><th>ID</th><th>Image</th><th>Food Name</th><th>Cuisine</th><th>Price</th></tr>
+   <tr>
+    <td>{{food.id}}</td>
+    <td><img src="{{food.imagePath}}" style="height: 150; width: 250;"></td>
+    <td>{{food.food_name}}</td>
+    <td>{{food.cuisine}}</td>
+    <td>{{food.food_price}}</td>
+    <td> <button (click) = "proceed()" class = "btn btn-success"><i class="fa fa-shopping-cart" aria-hidden="true">  Checkout</i></button></td>
+    <td> <button (click) = "addMore()" class = "btn btn-success"><i class="fa fa-cart-plus" aria-hidden="true">  Add  More  To  Cart</i></button></td>
+    </tr>
+    </table>
+
+  
